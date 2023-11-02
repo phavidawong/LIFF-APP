@@ -44,7 +44,7 @@
     console.log("Hello World!")
   </script> -->
 
-  <!-- <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script> -->
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     function createUniversalLink() {
     }
@@ -77,11 +77,11 @@
     }
 
     function getEnvironment() {
-      document.getElementById("os").append(liff.getOS())
+      document.getElementById("os").append(liff.getOS() + "   FFFF")
     }
 
     async function main() {
-  
+
       await liff.init({ liffId: "2001435267-4ajX5eAy" })
       getEnvironment()
       // getUserProfile()
